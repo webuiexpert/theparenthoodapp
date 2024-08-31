@@ -114,10 +114,12 @@ body {
     z-index: -1;
     width: 75%;
 }
+.appBox a{
+    color: transparent ;
+}
 
 .transform-section .row {
-    padding-top: 120px;
-    padding-bottom: 40px;
+    padding-top: 130px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
