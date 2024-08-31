@@ -704,14 +704,14 @@ body {
 
 
 
-@media (340px <=width <=890px) {
+@media (320px <=width <=890px) {
     .container {
         width: 100%;
         padding: 0 20px;
     }
 
     .hero-section {
-        min-height: 190vh;
+        min-height: 215vh;
     }
 
     .hero-section .row {
@@ -927,13 +927,24 @@ body {
     }
     .parent-says-section .row .col .innerBox .bubble2 {
         bottom: 25px;
-        right: 5px;
+        right: 15px;
+    }
+    .family-adventure-section .innercols .rightcol .bubble2 {
+        transform: translate(-20%, -40%);
+    }
+    .family-adventure-section .innercols .rightcol .bubble1 {
+        transform: translate(-80%, 50%);
     }
 
     .transform-section .row {
         padding: 40px 0;
     }
-
+    .transform-section .row .col2 .bubble1 {
+        transform: translateX(-23%);
+    }
+    .transform-section .row .col2 .bubble2 {
+        transform: translateX(15%);
+    }
     .transform-section .row h2 {
         font-weight: 500;
         font-size: 24px;
@@ -966,7 +977,7 @@ body {
         font-size: 18px;
     }
     .aiAssistant-section .row{
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     .aiAssistant-section .innercols .innerright h3 {
@@ -979,11 +990,11 @@ body {
     }
 
     .aiAssistant-section .innercols .innerright {
-        width: 70%;
+        width: 100%;
     }
     .aiAssistant-section .innercols .left 
     {
-        width: 70%;
+        width: 95%;
     }
     .aiAssistant-section .innercols .innerright {
         justify-content: space-between;
@@ -991,7 +1002,7 @@ body {
     }
 
     .aiAssistant-section .innercols .right {
-        height: 420px;
+        height: autox;
     }
     .aiAssistant-section .innercols {
 
@@ -1002,6 +1013,20 @@ body {
     }
     .family-adventure-section .bubble2{
         width: 40px !important;
+    }
+    .family-adventure-section .innercols .leftcol .bubble1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(20%, -50%);
+    }
+    
+    .family-adventure-section .innercols .leftcol .bubble2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(4%, -190%);
+        width: 30px;
     }
 
     .family-adventure-section .row {
