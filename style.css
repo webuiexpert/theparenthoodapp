@@ -167,11 +167,11 @@ body {
     line-height: 1.2em;
 }
 
-.DesktopphoneBox{
-    display: block;
+.transform-section .DesktopphoneBox{
+    display: flex;
 }
-.MobphoneBox{
-    display: none;
+.transform-section .MobphoneBox{
+    display: none !important;
 }
 
 .phoneBox {
@@ -319,10 +319,10 @@ body {
 }
 
 .desktopDailysection{
-    display: none;
+    display: block;
 }
 .mobDailysection{
-    display: block;
+    display: none;
 }
 
 
@@ -767,7 +767,7 @@ body {
     }
     .container {
         width: 100%;
-        padding: 0 60px;
+        padding: 0 30px;
     }
 
     .hero-section {
