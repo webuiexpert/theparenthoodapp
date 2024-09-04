@@ -39,6 +39,13 @@ body {
 .hero-section{
     position: relative;
 }
+.mobContainer {
+    display: none;
+}
+.desktopContainer{
+    display: block;
+}
+
 .hero-section .row {
     padding: 40px;
     width: 100%;
@@ -158,6 +165,13 @@ body {
     width: 529px;
     text-align: center;
     line-height: 1.2em;
+}
+
+.DesktopphoneBox{
+    display: block;
+}
+.MobphoneBox{
+    display: none;
 }
 
 .phoneBox {
@@ -303,6 +317,14 @@ body {
     top: 0;
     transform: translate(-70%, 15%);
 }
+
+.desktopDailysection{
+    display: none;
+}
+.mobDailysection{
+    display: block;
+}
+
 
 .parent-says-section .row {
     padding: 60px 0;
@@ -737,14 +759,19 @@ body {
 
 
 @media (320px <=width <=890px) {
+    .desktopContainer{
+        display: none;
+    }
+    .mobContainer{
+        display: block;
+    }
     .container {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 60px;
     }
 
     .hero-section {
-        height: 195vh;
-        position: relative;
+        height: auto;
     }
 
     .hero-section .row {
@@ -788,6 +815,13 @@ body {
         width: 50%;
     }
 
+    .MobrightInner .mobphone-img1bg{
+        position: static;
+    }
+    .right .MobrightInner img{
+        margin-top: 40px !important;
+    }
+
     .transform-section .row h2 {
         width: 100%;
     }
@@ -804,6 +838,40 @@ body {
     .aiAssistant-section .innercols {
         flex-direction: column;
         width: 100%;
+    }
+    .mobDailysection{
+        background: url(./images/daily-bg.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 100px;
+        padding-top: 80px;
+    }
+    .mobDailysection .innerBox{
+        background: #ef7c64;
+        text-align: center;
+        border-radius:48px ;
+        margin-top: 80px;
+        padding: 80px 30px;
+    }
+    .mobDailysection .innerBox h3{
+        text-align: left;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+
+    .mobDailysection .innerBox .ques{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap:10px;
+        margin-top: 20px;
+    }
+    .mobDailysection .innerBox .ques p{
+        text-align: left;
+    }
+    .mobDailysection .innerBox .phone4{
+        margin-top: -140px;
     }
 
 
@@ -824,45 +892,34 @@ body {
         height: 100%;
     }
 
+    .parent-says-section{
+        padding: 20px 10px 70px 10px;
+    }
     .parent-says-section .colsDiv {
         flex-direction: column;
+        align-items: center !important;
         gap: 40px;
+    }
+    .parent-says-section .colsDiv h6{
+        text-align: center;
     }
 
     .parent-says-section .colsDiv .col {
         width: 100%;
-    }
-
-    .daily-section .row {
-        padding: 40px 0;
-
-    }
-
-    .daily-section .row .phone4 {
-        position: static;
-        transform: translate(0%, 0%);
-
-    }
-
-    .daily-section .row .innerBox {
         align-items: center;
-        background: #FC927C;
-        width: 100%;
-        min-height: 680px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0;
-        gap: 20px;
+        text-align: center;
     }
 
-    .daily-section .row .innerBox {
-        padding: 20px;
-        background-color: #fc927c7a;
-    }
+    .parent-says-section .colsDiv .innerBox {
 
-    .daily-section .innerBox h3 {
-        font-size: 20px;
+        height: auto;
+
+    }
+    .desktopDailysection{
+        display: none;
+    }
+    .mobDailysection{
+        display: block;
     }
 
     .aitextimg {
@@ -943,11 +1000,13 @@ body {
     }
     .parent-says-section .row .col .innerBox .bubble1 {
         position: absolute;
-        bottom: -20px;
+        bottom: -50px;
+        width: 40px !important;
         right: 40px;
     }
     .parent-says-section .row .col .innerBox .bubble2 {
-        bottom: 25px;
+        bottom: -15px;
+        width:25px;
         right: 15px;
     }
     .family-adventure-section .innercols .rightcol .bubble2 {
@@ -971,6 +1030,52 @@ body {
         font-size: 24px;
     }
 
+    .DesktopphoneBox{
+        display: none;
+    }
+    .MobphoneBox{
+        display: block;
+    }
+    
+    .MobphoneBox .col3{
+        margin: 20px 0;
+
+    }
+    .MobphoneBox p{
+        font-size: 16px !important;
+        text-align: center;
+        line-height: 1.4em;
+    }
+    .MobphoneBox .col1, .col3{
+    padding: 15px !important;
+    background-color: #f3b19fba !important;
+
+    }
+    .MobphoneBox .col2 {
+        margin-top: 100px !important;
+    }
+    .MobphoneBox .col2 .MobPhone{
+        width: 100%;
+        position: relative;
+        
+    }
+    .MobphoneBox .col2 .bubble1{
+        position: absolute;
+        right: -20px !important;
+        top: -10px !important;
+        transform: translate(-50% , -80%) !important;
+        width: 50px !important;
+        z-index: -1;
+    }
+    .MobphoneBox .col2 .bubble2{
+        position: absolute;
+        right: -20px !important;
+        top: -70px !important;
+        transform: translate(-50% , -50%) !important;
+        width: 30px !important;
+    
+    }
+
     .journal-section .row {
         flex-direction: column;
         padding-top: 0;
@@ -989,8 +1094,15 @@ body {
         margin: 0;
         margin-top: 20px;
         border-radius: 48px;
+        flex-direction: column;
+        align-items: start;
     }
-
+    .captureBox svg{
+    margin-left: -25px !important;
+}
+.addBox svg{
+    margin-left: -50px !important;
+}
     .transform-section .row .phoneBox .col1,
     .col3 {
         width: 100%;
