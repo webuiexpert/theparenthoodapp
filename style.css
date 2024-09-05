@@ -718,40 +718,16 @@ body {
     font-size: 24px;
     color: #fff;
 }
-
-
-
-
-
-@media screen and (min-width: 765px) {
-
-   
-    .aiAssistant-section .innercols .left .aiassitantImg {
-        width: 80%;
-        height: 100%;
-    }
-    .aiAssistant-section .innercols .left {
-        padding-top: 60px;
-        height: auto;
-    }
-
-    .aitextimg {
-        width: 70% !important;
-    }
-    .aiAssistant-section .aitextimg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        translate: 20% -70%;
-    }
-
-    
+.mob-conversation-section{
+    display: none;
 }
 
 
 
 
-@media (320px <= width <= 1020px) {
+
+
+@media (320px <= width <= 890px) {
 
     .hero-section,
 .aiAssistant-section{
@@ -1065,7 +1041,7 @@ font-size: 16px;
     .parent-says-section .row .colsDiv{
         margin-top: 40px;
     }
-}
+
     .family-adventure-section .innercols .rightcol .bubble2 {
         transform: translate(-20%, -40%);
     }
@@ -1352,6 +1328,7 @@ font-size: 16px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        display: block;
     }
 
     .mob-conversation-section .row{
@@ -1437,3 +1414,4 @@ font-size: 16px;
     .footcol2 h3{
         font-size: 20px;
     }
+}
