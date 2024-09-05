@@ -754,8 +754,7 @@ body {
 @media (320px <= width <= 1020px) {
 
     .hero-section,
-.aiAssistant-section,
-{
+.aiAssistant-section{
     width: 100%;
     background-image: url('./images/Mobilemain-bg-img.png');
     background-attachment:local;
@@ -782,7 +781,7 @@ body {
     .hero-section .row {
         flex-direction: column;
         width: 100%;
-        padding: 40px 0;
+        padding: 40px 28px;
         padding-bottom: 10px;
     }
 
@@ -842,6 +841,9 @@ font-size: 16px;
     } 
     .mobContainer .right .mobphone-img1bg{
         margin-top: -0px !important;
+    }
+    .mobContainer .left h2{
+        font-size: 30px !important;
     }
 
   
