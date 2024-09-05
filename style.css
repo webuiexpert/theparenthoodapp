@@ -34,7 +34,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 .hero-section{
     position: relative;
@@ -753,6 +752,18 @@ body {
 
 
 @media (320px <= width <= 1020px) {
+
+    .hero-section,
+.aiAssistant-section,
+.footer {
+    width: 100%;
+    background-image: url('./images/Mobilemain-bg-img.png');
+    background-attachment:local;
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
     .desktopContainer{
         display: none;
     }
@@ -805,6 +816,10 @@ font-size: 16px;
         margin-left: 0px;
     }
 
+    .desktopContainer .right .phone-img1bg{
+        margin-left: 16px;
+    }
+
     .MobphoneBox {
         flex-direction: column;
         gap:0;
@@ -849,7 +864,7 @@ font-size: 16px;
         background-repeat: no-repeat;
         background-size: cover;
         padding-bottom: 30px;
-        padding-top: 120px;
+        padding-top: 160px;
         color:#322e2e;
     }
     .mobDailysection .innerBox{
@@ -870,7 +885,7 @@ font-size: 16px;
         flex-direction: column;
         align-items: start;
         gap:10px;
-        margin-top: 20px;
+        margin-top: 50px;
     }
     .mobDailysection .innerBox .ques p{
         text-align: left;
@@ -883,7 +898,8 @@ font-size: 16px;
 
     .aiAssistant-section .innercols .innerright {
         width: 100%;
-        padding: 20px;
+        padding: 45px;
+        padding-bottom: 10px;
     }
     .aiAssistant-section .innercols .right{
         height: auto !important;
@@ -988,22 +1004,28 @@ font-size: 16px;
 
     .parenting-WisdomDesktop {
         flex-direction: column;
-        height: 600px;
+        height: 800px;
     }
 
     .parenting-WisdomDesktop .textImgPart h4 {
-        font-size: 16px;
+        font-size: 20px;
         color: #ef7c64;
         font-weight: 500;
     }
+    .parenting-WisdomDesktop .textImgPart p{
+        font-size: 17px;
+        margin: 20px 0;
+    }
 
     .parenting-WisdomDesktop .textImgPart img {
-        width: 150px;
+        width: 80%;
     }
 
     .parenting-WisdomDesktop .textImgPart {
         width: 100%;
-        padding: 20px;
+        padding: 10px;
+        padding-top: 50px;
+
         text-align: center;
     }
 
@@ -1054,7 +1076,7 @@ font-size: 16px;
         display: block !important;
     }
     .transform-section .row {
-        padding: 40px 0;
+        padding: 60px 0;
     }
     .transform-section .row .col2 .bubble1 {
         transform: translateX(-23%);
@@ -1088,13 +1110,14 @@ font-size: 16px;
     border-radius: 20px;
     }
     .MobphoneBox .col3{
-        padding: 15px;
+        padding: 15px 35px;
         background-color: #fc927c26 !important;
         margin: 20px 0;
         border-radius: 20px;
         }
+  
     .MobphoneBox .col2 {
-        margin-top: 100px !important;
+        margin-top: 50px !important;
     }
     .MobphoneBox .col2 .MobPhone{
         width: 100%;
@@ -1105,7 +1128,7 @@ font-size: 16px;
         position: absolute;
         right: -20px !important;
         top: -10px !important;
-        transform: translate(-50% , -80%) !important;
+        transform: translate(-85% , -29%) !important;
         width: 50px !important;
         z-index: -1;
     }
@@ -1113,7 +1136,7 @@ font-size: 16px;
         position: absolute;
         right: -20px !important;
         top: -70px !important;
-        transform: translate(-50% , -50%) !important;
+        transform: translate(-72% , 67%) !important;
         width: 30px !important;
     
     }
@@ -1138,8 +1161,21 @@ font-size: 16px;
     }
     .mobileRow .right{
         margin-top: 20px;
+        position: relative;
+        padding-top: 80px !important;
     }
- 
+    .mobileRow .right .imgicon1{
+        width: 25% !important;
+        position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(10% , 20%);
+    }
+    .mobileRow .right .journalImg{
+        width: 90% !important;
+        margin-left: 25px;
+
+    }
 
     .captureBox,
     .addBox {
@@ -1149,6 +1185,7 @@ font-size: 16px;
         border-radius: 48px;
         flex-direction: column;
         align-items: start;
+        padding: 22px 38px 30px 38px;
     }
     .captureBox svg{
     margin-left: -25px !important;
@@ -1170,6 +1207,7 @@ font-size: 16px;
     }
     .aiAssistant-section .row{
         padding: 20px 0;
+        padding-top: 80px;
     }
 
     .aiAssistant-section .innercols .innerright h3 {
@@ -1223,12 +1261,14 @@ font-size: 16px;
     }
 
     .family-adventure-section .row {
-        padding: 40px 0;
+        padding: 60px 0;
+        padding-bottom: 20px;
     }
 
     .family-adventure-section .row h2 {
         width: 100%;
-        font-size: 20px;
+        font-size: 24px;
+    line-height: 1.2em;
     }
 
     .family-adventure-section .row .leftcol {
@@ -1293,8 +1333,50 @@ font-size: 16px;
         font-size: 20px;
     }
 
+
+    .mob-conversation-section{
+        background: url(./images/Mobile-conversation-card-bgImg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mob-conversation-section .row{
+        padding-top: 240px;
+        padding-bottom: 40px;
+    }
+    .mob-conversation-section .innerBox{
+        min-height: 662px;
+        width: 100%;
+        background: #FC927C;
+        border-radius:48px ;
+        text-align: center;
+        padding: 20px;
+        }
+        .mob-conversation-section .innerBox img{
+            margin-top: -60px;
+            width: 80%;
+        }
+        .MobinnerBox{
+            padding: 20px;
+        }
+        .MobinnerBox h3{
+            text-align: left;
+            font-weight: 400;
+        }
+        .MobinnerBox  .Mobques{
+            text-align: left;
+            margin-top: 40px;
+        }
+        .MobinnerBox  .Mobques p{
+            font-size: 14px;
+            line-height: 1.6em;
+        }
+
     .footer .row {
         flex-direction: column;
+        padding: 30px 10px;
+        
     }
 
     .footer .row .footcol2 {
@@ -1308,5 +1390,26 @@ font-size: 16px;
         gap: 10px;
         flex-direction: row !important;
     }
-
+    .footerAppBox img{
+        width: 100%;
+    }
+    .footer .footCol1 {
+    flex-direction: column;
+    width: 100%;
+    }
+    .footCol1 .logo {
+        border-right: 0px !important;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        padding: 0px !important;
+        padding-bottom: 20px !important;
+    
+    }
+    .footCol1 .logo img{
+        width: 50%;
+    }
+    .footcol2{
+        margin-top: 20px !important;
+    }
  
